@@ -7,14 +7,6 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 
-
-
-
-
-
-
-
-
 public class CSVMovieRunnableServiceThread
   implements Runnable
 {
@@ -24,13 +16,14 @@ public class CSVMovieRunnableServiceThread
   {
     try
     {
-      CSVParser l_parser = new CSVParser("C:\\Users\\Alexander\\Documents\\NetBeansProjects\\IBM_SanFrancisco\\src\\inputfile\\Film_Locations_in_San_Francisco.csv");
+    /*
+    reads the CSV file 
+    NOTE:: Folder can be changed 
+    */
+      CSVParser l_parser = new CSVParser("C:\\Users\\Alexander\\Documents\\NetBeansProjects\\IBM_SanFrancisco\\src\\Film_Locations_in_San_Francisco.csv");
       
       l_parser.readFile();
       
-
-
-
       System.out.println("Reading is successful");
       ArrayList<CSVFilterParameter> l_list = l_parser.getM_filterList();
       for (int i = 0; i < l_list.size(); i++) {
