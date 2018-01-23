@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>CIC-Challenge</title>
+    <link type="text/css" rel="stylesheet" href="CIC-Challenge-Dateien/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="CIC-Challenge-Dateien/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="CIC-Challenge-Dateien/hljs-github.css">
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="cic-challenge"><a class="header-link" href="#cic-challenge"></a>CIC-Challenge</h1>
+<p>Entsprechend der Fähigkeiten sollte eine der folgenden Varianten gewählt werden:</p>
+<ol class="list">
+<li><strong>Back-end</strong>:  Nur die Back-end Challenge unten implementieren. Evtl. minimales Front-end hinzufügen (Statischer View oder API Docs)</li>
+<li><strong>Front-end</strong>: Nur die Front-end Challenge unten 
+impementieren. Entweder die Back-end Rest-Resourcen statisch hinzufügen 
+oder ein beliebiges minimales Back-end Service bauen (z.B. NodeJS)</li>
+<li><strong>Fullstack</strong>: Front-end und Back-end Challenge implementieren.</li>
+</ol>
+<h2 id="allgemeines"><a class="header-link" href="#allgemeines"></a>Allgemeines</h2>
+<ul class="list">
+<li><p>Der erstellte Sourcecode sollte in einem Source-Repositoy (gibthub, bitbucket etc.) eingecheckt werden.</p>
+</li>
+<li><p>Das Ergebnis sollte public gehostet sein (z.B.: Bluemix oder ähnlich).</p>
+</li>
+<li><p>Nicht mehr als maximal 5 Stunden für die Challenge verwenden.</p>
+</li>
+</ul>
+<h2 id="themenvorschl-ge"><a class="header-link" href="#themenvorschl-ge"></a>Themenvorschläge</h2>
+<ol class="list">
+<li><p><strong>Drehorte in San Francisco</strong></p>
+<ul class="list">
+<li>Der Service soll von allen Filmen, die in San Francisco gedreht worden sind, den Namen des Films und den Drehort liefern.</li>
+<li>Daten gibt es hier: <a href="https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am">https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am</a></li>
+<li>Im erstellten Service sollte nur der Drehort und der Name des Filmes sein (nicht alle Daten)</li>
+</ul>
+</li>
+<li><p><strong>CO2 Emmisionen von öffentlichen Gebäuden in San Francisco</strong></p>
+<ul class="list">
+<li>Der Service soll von allen öffentlichen Gebäuden in San Fancisco die CO2 Emmisionen liefern.</li>
+<li>Der erstellte Service sollte nur das Gebäude, den Energieträger und die CO2 Emmisione liefern.</li>
+<li>Wenn der CO2 Wert 0 ist, sollte der Datensatz ignoriert werden.</li>
+<li>Die Daten gibt es hier: <a href="https://data.sfgov.org/Energy-and-Environment/San-Francisco-Municipal-Greenhouse-Gas-Inventory/pxac-sadh">https://data.sfgov.org/Energy-and-Environment/San-Francisco-Municipal-Greenhouse-Gas-Inventory/pxac-sadh</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="back-end-rest-service"><a class="header-link" href="#back-end-rest-service"></a>Back-end: REST-Service</h2>
+<p>Aufgabe ist es, einen REST-Service Server zu implementieren. </p>
+<p>Das Ergebnis soll dann etwa so aussehen:</p>
+<p><a href="http://cic-challenge.eu-gb.mybluemix.net/ServiceA">http://cic-challenge.eu-gb.mybluemix.net/ServiceA</a></p>
+<p><strong>Anleitung</strong></p>
+<ul class="list">
+<li><p>Die externen Daten sollte direkt im Service während des Zugriffes gelesen und modifiziert werden.</p>
+</li>
+<li><p>Programmiersprache: Java / JEE</p>
+</li>
+<li><p>Der zu erstellende Service sollte das JSON Format (oder optional SOAP Format) unterstützen</p>
+</li>
+<li><p>Die Wahl der Json (oder SOAP) Library ist frei.</p>
+</li>
+<li><p>Filter: Über einen Eingabeparameter unterstützt der Service einen Filter (z.B. Filmnamen)</p>
+</li>
+<li><p>Automatisiertes Testing (optional)</p>
+</li>
+<li><p>Die Funktionalität des Services sollte in einem Markdown File dokumentiert sein (als Teil der Sourcen).</p>
+</li>
+</ul>
+<h2 id="front-end"><a class="header-link" href="#front-end"></a>Front-end</h2>
+<ul class="list">
+<li><p>Das User-Interface sollte optisch und funktional zum Thema passen.</p>
+</li>
+<li><p>Das Front-end sollte eine 'Single Page Application' sein. Ein 
+statischer Entry-Point (index.html) sollte alle nötigen externen 
+Resourcen (JS/CSS) inkludieren.</p>
+</li>
+<li><p>Ein JS Framework (AngularJS, React, Polymer etc.) und JS Libraries können frei gewählt werden .</p>
+</li>
+<li><p>Es sollten die CSS3, HTML5 und JS Kentnisse demonstriert werden.</p>
+</li>
+<li><p>In einem Readme.md sollte die wesentliche Funktionalität dokumentiert sein.</p>
+</li>
+</ul>
+    </article>
+  
+
+</body></html>
