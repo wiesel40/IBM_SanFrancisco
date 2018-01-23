@@ -1,19 +1,15 @@
 package CSVParser;
-
-
-
-
+/*
+This class contains the movie name and the movie location
+*/
 public class CSVFilterParameter
 {
   private String m_moviename;
-  
-
-
   private String m_movielocation;
   
-
-
-
+ /*
+   Getter and Setter for movie name and movie location
+  */
   public String getM_moviename()
   {
     return m_moviename;
@@ -23,8 +19,6 @@ public class CSVFilterParameter
     this.m_moviename = m_moviename;
   }
   
-
-
   public String getM_movielocation()
   {
     return m_movielocation;
@@ -34,15 +28,8 @@ public class CSVFilterParameter
     this.m_movielocation = m_movielocation;
   }
   
-
-
-
-
   public CSVFilterParameter() {}
   
-
-
-
   public CSVFilterParameter(String p_moviename, String p_movielocation)
   {
     m_moviename = p_moviename;
