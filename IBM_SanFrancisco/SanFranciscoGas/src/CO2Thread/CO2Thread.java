@@ -18,7 +18,9 @@ public class CO2Thread  implements Runnable{
     try
     {
         //current data 
-      CSVCO2Parser l_parser = new CSVCO2Parser("C:\\Users\\wiesel40\\Documents\\NetBeansProjects\\SanFranciscoGas\\src\\GasFile\\San_Francisco_Municipal_Greenhouse_Gas_Inventory.csv");
+        //read CSV data 
+        // some path is a file path where the csv file is located
+      CSVCO2Parser l_parser = new CSVCO2Parser("somepath\\San_Francisco_Municipal_Greenhouse_Gas_Inventory.csv");
       
       l_parser.readFile();
       
