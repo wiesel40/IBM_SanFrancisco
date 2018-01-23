@@ -22,8 +22,9 @@ public class CSVMovieRunnableServiceThread
     /*
     reads the CSV file 
     NOTE:: Folder can be changed 
+    somepath is the file path of Film_Locations_in_San_Francisco.csv
     */
-      CSVParser l_parser = new CSVParser("C:\\Users\\Alexander\\Documents\\NetBeansProjects\\IBM_SanFrancisco\\src\\Film_Locations_in_San_Francisco.csv");
+      CSVParser l_parser = new CSVParser("somepath\\Film_Locations_in_San_Francisco.csv");
       
       l_parser.readFile();
       
