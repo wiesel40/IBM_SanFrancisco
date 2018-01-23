@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package CO2Thread;
 
 import CSVCO2Filter.CO2FilterParameter;
@@ -12,8 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- *
- * @author Alexander
+Creats a CO2Thread
  */
 public class CO2Thread  implements Runnable{
 
@@ -22,7 +17,8 @@ public class CO2Thread  implements Runnable{
        {
     try
     {
-      CSVCO2Parser l_parser = new CSVCO2Parser("C:\\Users\\Alexander\\Documents\\NetBeansProjects\\SanFranciscoGas\\src\\GasFile\\San_Francisco_Municipal_Greenhouse_Gas_Inventory.csv");
+        //current data 
+      CSVCO2Parser l_parser = new CSVCO2Parser("C:\\Users\\wiesel40\\Documents\\NetBeansProjects\\SanFranciscoGas\\src\\GasFile\\San_Francisco_Municipal_Greenhouse_Gas_Inventory.csv");
       
       l_parser.readFile();
       
