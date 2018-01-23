@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package CSVCO2Filter;
 
 /**
- *
- * @author Alexander
+ This class provides getter and setter methods for 
+ Department , Emissions_mtCO2e , m_SourceType
  */
 public class CO2FilterParameter {
 
