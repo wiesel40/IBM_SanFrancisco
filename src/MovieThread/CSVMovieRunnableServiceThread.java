@@ -20,7 +20,8 @@ public class CSVMovieRunnableServiceThread
   {
     try
     {
-      CSVParser l_parser = new CSVParser("C:\\Users\\Alexander\\Documents\\NetBeansProjects\\IBM_SanFrancisco\\src\\inputfile\\Film_Locations_in_San_Francisco.csv");
+    //some Path
+      CSVParser l_parser = new CSVParser("IBM_SanFrancisco\\src\\inputfile\\Film_Locations_in_San_Francisco.csv");
       
       l_parser.readFile();
       
